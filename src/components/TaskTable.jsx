@@ -16,24 +16,24 @@ function TaskTable({ tasks, updateTask, deleteTask }) {
   };
 
   return (
-    <div className="bg-white p-4 rounded-lg shadow-lg">
+    <div className="bg-red-100 md:p-1 rounded-lg shadow-lg w-full">
       <table className="table-auto w-full border-collapse">
         <thead>
-          <tr className="w-full bg-gray-100 text-sm font-semibold">
-            <th className="border px-2 py-2 text-left">Title</th>
-            <th className="border px-2 py-2 text-left">Description</th>
-            <th className="border px-2 py-2 text-left">Due Date</th>
-            <th className="border px-2 py-2 text-left">Status</th>
+          <tr className="w-1/4 md:p-2 bg-gray-100 text-sm font-semibold rounded-md">
+            <th className="border md:px-2 md:py-2 text-center">Title</th>
+            <th className="border px-2 py-2 text-center">Description</th>
+            <th className="border px-2 py-2 text-center">Due Date</th>
+            <th className="border px-2 py-2 text-center">Status</th>
             <th className="border px-2 py-2 text-center">Actions</th>
           </tr>
         </thead>
         <tbody>
           {tasks.length > 0 ? (
             tasks.map((task) => (
-              <tr key={task.id} className="hover:bg-gray-50 text-sm">
-                <td className="border px-4 py-2">{task.title}</td>
-                <td className="border px-4 py-2">{task.description}</td>
-                <td className="border px-4 py-2">{task.dueDate}</td>
+              <tr key={task.id} className="hover:bg-gray-50 w-1/4 text-sm">
+                <td className="border md:px-4 md:py-2">{task.title}</td>
+                <td className="border md:px-4 md:py-2">{task.description}</td>
+                <td className="border md:px-4 md:py-2">{task.dueDate}</td>
                 <td
                   className={`border px-4 py-2 ${
                     task.status === "Completed"
@@ -45,10 +45,10 @@ function TaskTable({ tasks, updateTask, deleteTask }) {
                 >
                   {task.status}
                 </td>
-                <td className="border px-4 py-2 text-center">
+                <td className="border md:px-4 md:py-2 text-center">
                   <button
                     onClick={() => openEditModal(task)}
-                    className="bg-blue-500 text-white px-3 py-1 rounded mr-2 hover:bg-blue-600"
+                    className="bg-blue-500 text-white md:px-3 md:py-1 rounded mr-2 hover:bg-blue-600"
                   >
                     Edit
                   </button>
