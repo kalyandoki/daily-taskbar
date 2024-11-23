@@ -67,7 +67,7 @@ function TaskTable({ tasks, updateTask, deleteTask }) {
             ))
           ) : (
             <tr>
-              <td colSpan="5" className="text-center py-4 text-gray-500">
+              <td colSpan="5" className="text-center py-4 text-gray-800">
                 No tasks available
               </td>
             </tr>
