@@ -19,12 +19,12 @@ function TaskTable({ tasks, updateTask, deleteTask }) {
     <div className="bg-white p-4 rounded-lg shadow-lg">
       <table className="table-auto w-full border-collapse">
         <thead>
-          <tr className="bg-gray-100 text-sm font-semibold">
-            <th className="border px-4 py-2 text-left">Title</th>
-            <th className="border px-4 py-2 text-left">Description</th>
-            <th className="border px-4 py-2 text-left">Due Date</th>
-            <th className="border px-4 py-2 text-left">Status</th>
-            <th className="border px-4 py-2 text-center">Actions</th>
+          <tr className="w-full bg-gray-100 text-sm font-semibold">
+            <th className="border px-2 py-2 text-left">Title</th>
+            <th className="border px-2 py-2 text-left">Description</th>
+            <th className="border px-2 py-2 text-left">Due Date</th>
+            <th className="border px-2 py-2 text-left">Status</th>
+            <th className="border px-2 py-2 text-center">Actions</th>
           </tr>
         </thead>
         <tbody>

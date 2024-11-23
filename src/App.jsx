@@ -24,9 +24,11 @@ function App() {
   const deleteTask = (id) => setTasks(tasks.filter((task) => task.id !== id));
 
   return (
-    <div className="min-h-screen p-4 bg-gray-100">
-      <div className="max-w-3xl mx-auto">
-        <h1 className="text-2xl font-bold mb-4">Daily Tasks Manager</h1>
+    <div className="text-center min-h-screen p-4 bg-gray-100">
+      <div className=" max-w-3xl mx-auto">
+        <h1 className="text-center text-2xl font-bold mb-4">
+          Daily Tasks Manager
+        </h1>
         <AddTaskForm addTask={addTask} />
         <TaskTable
           tasks={tasks}
